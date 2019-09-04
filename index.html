@@ -17,23 +17,49 @@
 </head>
 <body>
     <div class="row top-margin container">
+                  <!-- Logo begins here -->
+                <p class="text-center animated tada infinite">
+                    <img src="./images/hbb_logo.jpg" alt="HBBAfrica Logo" width="100px"
+                        id="logo" class="bottom-margin">
+                </p>
         <form class="col s12">
           <div class="row">
             <div class="input-field col s6">
-              <input id="first_name" type="text" class="validate">
-              <label for="first_name">First Name</label>
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate" required>
+              <label for="icon_prefix">First Name</label>
             </div>
             <div class="input-field col s6">
-              <input id="last_name" type="text" class="validate">
+              <input id="last_name" type="text" class="validate" required>
               <label for="last_name">Last Name</label>
             </div>
           </div>
           <div class="row">
-            <div class="input-field col s12">
-              <input id="email" type="email" class="validate">
+            <div class="input-field col s8">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" class="validate" required>
               <label for="email">Email</label>
+              <span class="helper-text" data-error="wrong" data-success="right"></span>
             </div>
-          </div>
+            <div class="input-field col s4">
+                <i class="material-icons prefix">phone</i>
+                <input id="icon_telephone" type="tel" class="validate" id="phone" name="phone" required>
+                <label for="icon_telephone">Telephone</label>
+            </div>
+            </div>
+            <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <!--<textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Please Tell Us Where You Currently Live</label>-->
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                    <label for="icon_prefix2">Please Tell Us Where You Currently Live</label>
+                  </div>
+                </div>
+              </form>
+            </div>
           <div>
             <form action="#"> Gender:
                 <p>
@@ -55,7 +81,55 @@
                 </label>
                 </p>
             </form>
-        </div>
+        </div> <br>
+        <div>
+          <form action="#"> Which Social Media Handle Are You Most Conversant With?
+            <p>
+              <label>
+                <input name="gender" type="radio" checked />
+                <span>LinkedIn</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input name="gender" type="radio" />
+                <span>Twitter</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input name="gender" type="radio" />
+                <span>Instagram</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input name="gender" type="radio" />
+                <span>Facebook</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input name="gender" type="radio" />
+                <span>Skype</span>
+              </label>
+            </p>
+          </form>
+        </div> <br>
+          <div class="input-field col s6">
+            <select multiple>
+              <option value="1" disabled selected>What Unit Would You Like To Volunteer?</option>
+              <option value="1">Research</option>
+              <option value="2">Writing Legal Articles</option>
+              <option value="3">Media Content Writing</option>
+              <option value="4">Paralegal Services</option>
+              <option value="5">Field/Outreach Support</option>
+              <option value="6">Graphics</option>
+              <option value="7">Photography</option>
+              <option value="8">Videography</option>
+            </select>
+            <label>Materialize Multiple Select</label>
+          </div>
         </form>
       </div>
       <!--import materialize js-->
