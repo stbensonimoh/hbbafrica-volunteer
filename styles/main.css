@@ -1,3 +1,79 @@
 /* .container {
     width: 50%;
 } */
+ body {
+  background: linear-gradient(-70deg, #fa7c30 1%, rgba(0, 0, 0, 0) 30%)/*, url(http://wallpaperswide.com/download/wild_youth-wallpaper-1920x1200.jpg)*/;
+  background-attachment: fixed; 
+}
+
+.container {
+  background: inherit;
+  position: relative;
+  height: auto;
+  width: 600px;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+/*   filter: opacity(50%); */
+}
+
+.container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(15px) saturate(2);
+    background: inherit;
+}
+
+.row {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+
+.linkedin {
+    background-color: #0077B5;
+    color: #fff;
+}
+
+.twitter {
+    background-color: #55acee;
+    color: #fff;
+}
+
+.instagram {
+    background-color: #e4405f;
+    color: #fff;
+}
+
+.facebook {
+    background-color: #3b5999;
+    color: #fff;
+}
+
+  .padding-bottom {
+    padding-bottom: 20px;
+  }
+
+  .padding-top {
+    padding-top: 20px;
+  }
+
+  .top-margin {
+    margin-top: 40px;
+  }
+
+  .bottom-margin {
+    margin-bottom: 40px;
+  }
+
+  #logo {
+    border-radius: 50%;
+  }
