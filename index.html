@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Volunteer Form</title>
+    <!-- Insert Favicon  -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Load intl-tel-input -->
+    <link rel="stylesheet" href="style/intlTelInput.min.css">
+    <!--import google fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- import font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css">
+    <!--import materialize css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Logo begins here -->
+        <div class="center-align logo-bg top-margin">
+            <p class="text-center animated tada infinite">
+                <img src="./images/hbb_logo.jpg" alt="HBBAfrica Logo" width="100px" id="logo">
+            </p>
+        </div>
+        <form class="padding-bottom padding-top" id="form">
+            <div class="row">
+                <div class="input-field col s12 l6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" class="validate" required>
+                    <label for="icon_prefix">First Name</label>
+                    <span class="helper-text" data-error="Ooops! You need to input your name"
+                     data-success="Yeah! Looks good"></span>
+                </div>
+                <div class="input-field col s12 l6">
+                    <input id="last_name" type="text" class="validate" required>
+                    <label for="last_name">Last Name</label>
+                    <span class="helper-text" data-error="Ooops! You need to input your name"
+                    data-success="Yeah! Looks good"></span>
+                </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 l8">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="email" class="validate" required>
+                    <label for="email">Email</label>
+                    <span class="helper-text" data-error="Sorry, but looks like this email is not valid"
+                     data-success="Great! You're good to go..."></span>
+              </div>
+              <div class="input-field col s12 l4">
+                    <i class="material-icons prefix">phone</i>
+                    <input type="tel" class="validate" id="phone" name="phone" required>
+                    <label for="icon_telephone">Telephone</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 l9">
+                  <i class="material-icons prefix">mode_edit</i>
+                  <textarea id="icon_prefix1" class="materialize-textarea"></textarea>
+                  <label for="icon_prefix1">Please Tell Us Where You Currently Live</label>
+              </div>
+            </div>
+            <div class="row">
+                <div> Gender:
+                    <p>
+                        <label>
+                            <input name="gender" type="radio" checked />
+                            <span>Male</span>
+                        </label>
+                    <!-- </p>
+                    <p> -->
+                        <label>
+                            <input name="gender" type="radio"/>
+                            <span>Female</span>
+                        </label>
+                    <!-- </p>
+                    <p> -->
+                        <label>
+                            <input name="gender" type="radio" />
+                            <span>Other</span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">List your Social Media Handles
+                    <div class="input-field col s12 l9">
+                        <span class="fab fa-linkedin prefix linkedin"></span>
+                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix2">linkedin url</label>
+                     </div>
+                    <div class="input-field col s12 l9">
+                        <span class="fab fa-twitter prefix twitter"></span>
+                        <textarea id="icon_prefix4" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix4">twitter url</label>
+                    </div>
+                    <div class="input-field col s12 l9">
+                        <span class="fab fa-instagram prefix instagram"></span>
+                        <textarea id="icon_prefix5" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix5">Instagram url</label>
+                    </div>
+                    <div class="input-field col s12 l9">
+                        <span class="fab fa-facebook prefix facebook"></span>
+                        <textarea id="icon_prefix6" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix6">Facebook url</label>
+                    </div>
+                    <div class="input-field col s12 l9">
+                        <span class="fab fa-skype prefix skype"></span>
+                        <textarea id="icon_prefix7" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix7">Skype url</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div>Which Social Media Handle Are You Most Conversant With?
+                <p>
+                    <label>
+                        <input name="socialMedia" type="radio" checked />
+                        <span>LinkedIn</span>
+                    </label>
+                <!-- </p>
+                <p> -->
+                    <label>
+                        <input name="socialMedia" type="radio" />
+                        <span>Twitter</span>
+                    </label>
+                <!-- </p>
+                <p> -->
+                    <label>
+                        <input name="socialMedia" type="radio" />
+                        <span>Instagram</span>
+                    </label>
+                <!-- </p>
+                <p> -->
+                    <label>
+                        <input name="socialMedia" type="radio" />
+                        <span>Facebook</span>
+                    </label>
+                <!-- </p>
+                <p> -->
+                    <label>
+                        <input name="socialMedia" type="radio" />
+                        <span>Skype</span>
+                    </label>
+                </p>
+                </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">What Unit Would You Like To Volunteer?
+                  <select multiple>
+                      <!-- <option value="" disabled selected>What Unit Would You Like To Volunteer?</option> -->
+                      <option value="1">Research</option>
+                      <option value="2">Writing Legal Articles</option>
+                      <option value="3">Media Content Writing</option>
+                      <option value="4">Paralegal Services</option>
+                      <option value="5">Field/Outreach Support</option>
+                      <option value="6">Graphics</option>
+                      <option value="7">Photography</option>
+                      <option value="8">Videography</option>
+                  </select>
+                  <!-- <label>What Unit Would You Like To Volunteer?</label> -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 l9">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="icon_prefix3" class="materialize-textarea"></textarea>
+                <label for="icon_prefix3">Why Do You Want To Volunteer?</label>
+              </div>
+            </div>
+            <div class="row center-align">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+            <!-- <span style="font-size: 3em; color: Tomato;">
+                <i class="fas fa-linkedin"></i>
+            </span> -->
+        </form>
+    </div>
+
+    <!--import materialize js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- load font awesome js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/js/all.min.js"></script>
+    <!-- main js -->
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
