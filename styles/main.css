@@ -2,9 +2,9 @@
     width: 50%;
 } */
  body {
-  background: linear-gradient(-70deg, #fa7c30 1%, rgba(0, 0, 0, 0) 30%) 
+  background: linear-gradient(-70deg, #fa7c30 1%, rgba(0, 0, 0, 0) 30%)
   /* url(https://www.freepik.com/free-photo/jail-room-background_1038367.htm) */;
-  background-attachment: fixed; 
+  background-attachment: fixed;
 }
 
 .container {
@@ -40,28 +40,23 @@
 
 
 .linkedin {
-    background-color: #0077B5;
-    color: #fff;
+    color: #0077B5;
 }
 
 .twitter {
-    background-color: #55acee;
-    color: #fff;
+    color: #55acee;
 }
 
 .instagram {
-    background-color: #e4405f;
-    color: #fff;
+    color: #e4405f;
 }
 
 .facebook {
-    background-color: #3b5999;
-    color: #fff;
+    color: #3b5999;
 }
 
 .skype {
-  background-color: #00aff0;
-  color: #fff;
+  color: #00aff0;
 }
 
   .padding-bottom {
