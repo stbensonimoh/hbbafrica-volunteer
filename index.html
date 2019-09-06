@@ -10,7 +10,8 @@
     <!-- Insert Favicon  -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
+    <!-- Load intl-tel-input -->
+    <link rel="stylesheet" href="style/intlTelInput.min.css">
     <!--import google fonts-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- import font awesome -->
@@ -23,7 +24,7 @@
 <body>
     <div class="top-margin">
         <!-- Logo begins here -->
-        <div class=" center-align">
+        <div class=" center-align"></div>
             <p class="text-center animated tada infinite">
                 <img src="./images/hbb_logo.jpg" alt="HBBAfrica Logo" width="100px" id="logo" class="bottom-margin">
             </p>
@@ -61,9 +62,8 @@
             <div class="row">
               <div class="input-field col s12 l9">
                   <i class="material-icons prefix">mode_edit</i>
-                <!-- <a class="btn-floating cyan pulse"><i class="material-icons">edit</i></a> -->
-                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                  <label for="icon_prefix2">Please Tell Us Where You Currently Live</label>
+                  <textarea id="icon_prefix1" class="materialize-textarea"></textarea>
+                  <label for="icon_prefix1">Please Tell Us Where You Currently Live</label>
               </div>
             </div>
             <div class="row">
@@ -90,32 +90,15 @@
             </div>
             <div class="row">
                 <div class="input-field col s12">List your Social Media Handles
-                    <div class="input-field">
-                        <div class="input-field-prepend">
-                            
-                            <span class="input-field linkedin"><i class="fas fa-linkedin"></i></span>
-                        </div>
-                        <input type="text" id="linkedinHandle" name="linkedinHandle" class="form-control">
-                    </div><br />
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text twitter"><i class="fa fa-twitter" aria-hidden="true"></i></span>
-                        </div>
-                        <input type="text" id="twitterHandle" name="twitterHandle" class="form-control">
-                    </div><br />
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text instagram"><i class="fa fa-instagram" aria-hidden="true"></i></span>
-                        </div>
-                        <input type="text" id="instagramHandle" name="instagramHandle" class="form-control">
-                    </div><br />
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text facebook"><i class="fa fa-facebook" aria-hidden="true"></i></span>
-                        </div>
-                        <input type="text" id="facebookHandle" name="facebookHandle" class="form-control">
-                    </div>
-            
+                    <div class="input-field col s12 l9">
+                        <span class="fas fa-camera prefix"></span>
+                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix2">linkedin url</label>
+                     </div>
+                     <!-- <div>
+                        <span class="fas fa-linkedin-in"></span>
+                         <i class="fas fa-linkedin-in"></i> 
+                    </div>  -->
                 </div>
             </div>
             <div class="row">
@@ -180,15 +163,18 @@
                     <i class="material-icons right">send</i>
                 </button>
             </div>
-            <span style="font-size: 3em; color: Tomato;">
-                <i class="fas fa-camera"></i>
-            </span>
+            <!-- <span style="font-size: 3em; color: Tomato;">
+                <i class="fas fa-linkedin"></i>
+            </span> -->
         </form>
     </div>
 
     <!--import materialize js-->
-    <script src="scripts/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- load font awesome js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/js/all.min.js"></script>
+    <!-- main js -->
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

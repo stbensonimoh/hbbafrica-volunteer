@@ -2,7 +2,8 @@
     width: 50%;
 } */
  body {
-  background: linear-gradient(-70deg, #fa7c30 1%, rgba(0, 0, 0, 0) 30%)/*, url(http://wallpaperswide.com/download/wild_youth-wallpaper-1920x1200.jpg)*/;
+  background: linear-gradient(-70deg, #fa7c30 1%, rgba(0, 0, 0, 0) 30%) 
+  /* url(https://www.freepik.com/free-photo/jail-room-background_1038367.htm) */;
   background-attachment: fixed; 
 }
 
