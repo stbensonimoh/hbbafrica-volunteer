@@ -84,6 +84,10 @@ select[required] {
     background: #eb8e1a;
 }
 
+.btn {
+    padding: 0px 40px 0px 40px;
+}
+
 .row {
   margin-left: 50px;
   margin-right: 50px;
