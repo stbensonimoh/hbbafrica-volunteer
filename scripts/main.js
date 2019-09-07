@@ -1,8 +1,8 @@
 'use strict'
 document.addEventListener('DOMContentLoaded', () => {
-  let date = new Date()
+  const date = new Date()
   const year = date.getFullYear()
-  let yearContent = document.querySelector('#year')
+  const yearContent = document.querySelector('#year')
   yearContent.innerHTML = year
 
   // Add intl-tel-input
@@ -16,4 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
   })
   const elems = document.querySelectorAll('select')
   const instances = M.FormSelect.init(elems)
+  const count = document.querySelector('textarea#textarea2')
+  M.CharacterCounter.init(count)
 })

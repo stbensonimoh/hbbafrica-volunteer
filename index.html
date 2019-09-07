@@ -34,13 +34,13 @@
             <div class="row">
                 <div class="input-field col s12 l6">
                     <i class="material-icons prefix">account_circle</i>
-                    <input id="icon_prefix" type="text" class="validate" required>
+                    <input id="icon_prefix" type="text" class="validate" name="firstName" required>
                     <label for="icon_prefix">Your First Name</label>
                     <span class="helper-text" data-error="Oops! Please provide a name."
                      data-success="Yeah! Looks good."></span>
                 </div>
                 <div class="input-field col s12 l6">
-                    <input id="last_name" type="text" class="validate" required>
+                    <input id="last_name" type="text" class="validate" name="lastName" required>
                     <label for="last_name">Your Last Name</label>
                     <span class="helper-text" data-error="Ooops! Please provide a name."
                     data-success="Yeah! Looks good."></span>
@@ -49,7 +49,7 @@
             <div class="row">
               <div class="input-field col s12 l6">
                     <i class="material-icons prefix">email</i>
-                    <input id="email" type="email" class="validate" required>
+                    <input id="email" type="email" class="validate" name="email" required>
                     <label for="email">Your Email</label>
                     <span class="helper-text" data-error="Please provide a valid email address."
                      data-success="Great! You're good to go."></span>
@@ -57,12 +57,14 @@
               <div class="input-field col s12 l6">
                     <i class="material-icons prefix">phone</i>
                     <input type="tel" class="validate" id="phone" name="phone" required>
+                    <span class="helper-text" data-error="Please provide a valid phone number."
+                        data-success="Great! You're good to go."></span>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12 l12">
                   <i class="material-icons prefix">location_on</i>
-                  <textarea id="icon_prefix1" class="materialize-textarea"></textarea>
+                  <textarea id="icon_prefix1" class="materialize-textarea" name="location"></textarea>
                   <label for="icon_prefix1">Where do you live?</label>
                 <span class="helper-text" data-error="Please provide a valid address."
                     data-success="Great! You're good to go."></span>
@@ -72,15 +74,15 @@
                 <div class="col s12 m12 l12"> Gender:
                     <p>
                         <label>
-                            <input name="gender" type="radio" checked />
+                            <input name="gender" type="radio" value="Male" checked />
                             <span>Male</span>
                         </label>
                         <label>
-                            <input name="gender" type="radio"/>
+                            <input name="gender" value="Female" type="radio"/>
                             <span>Female</span>
                         </label>
                         <label>
-                            <input name="gender" type="radio" />
+                            <input name="gender" value="Other" type="radio" />
                             <span>Other</span>
                         </label>
                     </p>
@@ -92,31 +94,31 @@
                     <div class="row">
                         <div class="input-field col s12 m6 l6">
                             <span class="fab fa-linkedin prefix linkedin"></span>
-                            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                            <input id="icon_prefix2" name="linkedin" class="materialize-textarea">
                             <label for="icon_prefix2">linkedin url</label>
                         </div>
                         <div class="input-field col s12 m6 l6">
                             <span class="fab fa-twitter prefix twitter"></span>
-                            <textarea id="icon_prefix4" class="materialize-textarea"></textarea>
+                            <input id="icon_prefix4" name="twitter" class="materialize-textarea">
                             <label for="icon_prefix4">twitter url</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 m6 l6">
                             <span class="fab fa-instagram prefix instagram"></span>
-                            <textarea id="icon_prefix5" class="materialize-textarea"></textarea>
+                            <input id="icon_prefix5" name="instagram" class="materialize-textarea">
                             <label for="icon_prefix5">Instagram url</label>
                         </div>
                         <div class="input-field col s12 m6 l6">
                             <span class="fab fa-facebook prefix facebook"></span>
-                            <textarea id="icon_prefix6" class="materialize-textarea"></textarea>
+                            <input id="icon_prefix6" name="facebook" class="materialize-textarea">
                             <label for="icon_prefix6">Facebook url</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 m6 l6">
                             <span class="fab fa-skype prefix skype"></span>
-                            <textarea id="icon_prefix7" class="materialize-textarea"></textarea>
+                            <input id="icon_prefix7" name="skype" class="materialize-textarea">
                             <label for="icon_prefix7">Skype url</label>
                         </div>
                     </div>
@@ -126,31 +128,23 @@
                 <div>Which Social Media Handle Are You Most Conversant With?
                 <p>
                     <label>
-                        <input name="socialMedia" type="radio" checked />
+                        <input name="preferredSocialMedia" value="linkedin" type="radio" checked />
                         <span>LinkedIn</span>
                     </label>
-                <!-- </p>
-                <p> -->
                     <label>
-                        <input name="socialMedia" type="radio" />
+                        <input name="preferredSocialMedia" value="twitter" type="radio" />
                         <span>Twitter</span>
                     </label>
-                <!-- </p>
-                <p> -->
                     <label>
-                        <input name="socialMedia" type="radio" />
+                        <input name="preferredSocialMedia" value="instagram" type="radio" />
                         <span>Instagram</span>
                     </label>
-                <!-- </p>
-                <p> -->
                     <label>
-                        <input name="socialMedia" type="radio" />
+                        <input name="preferredSocialMedia" value="facebook" type="radio" />
                         <span>Facebook</span>
                     </label>
-                <!-- </p>
-                <p> -->
                     <label>
-                        <input name="socialMedia" type="radio" />
+                        <input name="preferredSocialMedia" value="skype" type="radio" />
                         <span>Skype</span>
                     </label>
                 </p>
@@ -158,25 +152,26 @@
             </div>
             <div class="row">
               <div class="input-field col s12">What Unit Would You Like To Volunteer?
-                  <select multiple>
-                      <!-- <option value="" disabled selected>What Unit Would You Like To Volunteer?</option> -->
-                      <option value="1">Research</option>
-                      <option value="2">Writing Legal Articles</option>
-                      <option value="3">Media Content Writing</option>
-                      <option value="4">Paralegal Services</option>
-                      <option value="5">Field/Outreach Support</option>
-                      <option value="6">Graphics</option>
-                      <option value="7">Photography</option>
-                      <option value="8">Videography</option>
+                  <select name="volunteerUnit" multiple>
+                      <option value="Research">Research</option>
+                      <option value="Writing Legal Articles">Writing Legal Articles</option>
+                      <option value="Media Content Writing">Media Content Writing</option>
+                      <option value="Paralegal Services">Paralegal Services</option>
+                      <option value="Field/Outreach Support">Field/Outreach Support</option>
+                      <option value="Graphics">Graphics</option>
+                      <option value="Photography">Photography</option>
+                      <option value="Videography">Videography</option>
                   </select>
-                  <!-- <label>What Unit Would You Like To Volunteer?</label> -->
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12 m12 l12">
                 <i class="material-icons prefix">mode_edit</i>
-                <textarea id="icon_prefix3" class="materialize-textarea"></textarea>
-                <label for="icon_prefix3">Why do you want to volunteer?</label>
+                 <textarea id="textarea2" class="materialize-textarea" name="reasonForVolunteering"
+                  minlength="160" data-length=""></textarea>
+                <label for="textarea2">Why do you want to volunteer?</label>
+                <span class="helper-text" data-error="Your input should be at least 160 characters."
+                    data-success="Great! You're good to go."></span>
               </div>
             </div>
             <div class="row center-align">
