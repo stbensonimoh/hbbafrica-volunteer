@@ -1,8 +1,29 @@
+.iti__flag {
+    background-image: url("../images/flags.png");
+}
+
+.iti {
+    width: 100%;
+    /* position: relative; */
+    left: 40px;
+}
+
+#phone {
+    margin-right: 3rem;
+    width: calc(100% - 9rem);
+}
 
 body {
     background: #e7e7e7;
 }
 
+div.row {
+    margin-bottom: 10px;
+}
+
+div.input-field {
+    margin-bottom: 0px;
+}
 .container {
     width: 60%;
 }
@@ -33,22 +54,26 @@ body {
     border-radius: 15px 15px 0px 0px;
 }
 
+#logo {
+    width: 10rem;
+}
+
 #form {
-  background: #fff;
-  /* position: relative; */
-  height: auto;
-  margin: auto;
-  margin-top: 0px;
-  margin-bottom: 50px;
-  border-radius: 0px 0px 15px 15px;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-/*   filter: opacity(50%); */
+    background: #fff;
+    /* position: relative; */
+    height: auto;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    /*   filter: opacity(50%); */
 }
 
 .row {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -69,25 +94,25 @@ body {
 }
 
 .skype {
-  color: #00aff0;
+    color: #00aff0;
 }
 
-  .padding-bottom {
+.padding-bottom {
     padding-bottom: 20px;
-  }
+}
 
-  .padding-top {
+.padding-top {
     padding-top: 20px;
-  }
+}
 
-  .top-margin {
+.top-margin {
     margin-top: 40px;
-  }
+}
 
-  .bottom-margin {
+.bottom-margin {
     margin-bottom: 40px;
-  }
+}
 
-  #logo {
+#logo {
     border-radius: 50%;
-  }
+}

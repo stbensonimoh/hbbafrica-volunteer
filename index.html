@@ -11,7 +11,8 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Load intl-tel-input -->
-    <link rel="stylesheet" href="style/intlTelInput.min.css">
+    <link rel="stylesheet" href="styles/intlTelInput.min.css">
+    <script src="scripts/intlTelInput.min.js"></script>
     <!--import google fonts-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- import font awesome -->
@@ -26,7 +27,7 @@
         <!-- Logo begins here -->
         <div class="center-align logo-bg top-margin">
             <p class="text-center animated tada infinite">
-                <img src="./images/hbb_logo.jpg" alt="HBBAfrica Logo" width="100px" id="logo">
+                <img src="./images/hbb_logo.jpg" alt="HBBAfrica Logo" id="logo">
             </p>
         </div>
         <form class="padding-bottom padding-top" id="form">
@@ -34,53 +35,50 @@
                 <div class="input-field col s12 l6">
                     <i class="material-icons prefix">account_circle</i>
                     <input id="icon_prefix" type="text" class="validate" required>
-                    <label for="icon_prefix">First Name</label>
-                    <span class="helper-text" data-error="Ooops! You need to input your name"
-                     data-success="Yeah! Looks good"></span>
+                    <label for="icon_prefix">Your First Name</label>
+                    <span class="helper-text" data-error="Oops! Please provide a name."
+                     data-success="Yeah! Looks good."></span>
                 </div>
                 <div class="input-field col s12 l6">
                     <input id="last_name" type="text" class="validate" required>
-                    <label for="last_name">Last Name</label>
-                    <span class="helper-text" data-error="Ooops! You need to input your name"
-                    data-success="Yeah! Looks good"></span>
+                    <label for="last_name">Your Last Name</label>
+                    <span class="helper-text" data-error="Ooops! Please provide a name."
+                    data-success="Yeah! Looks good."></span>
                 </div>
             </div>
             <div class="row">
-              <div class="input-field col s12 l8">
+              <div class="input-field col s12 l6">
                     <i class="material-icons prefix">email</i>
                     <input id="email" type="email" class="validate" required>
-                    <label for="email">Email</label>
-                    <span class="helper-text" data-error="Sorry, but looks like this email is not valid"
-                     data-success="Great! You're good to go..."></span>
+                    <label for="email">Your Email</label>
+                    <span class="helper-text" data-error="Please provide a valid email address."
+                     data-success="Great! You're good to go."></span>
               </div>
-              <div class="input-field col s12 l4">
+              <div class="input-field col s12 l6">
                     <i class="material-icons prefix">phone</i>
                     <input type="tel" class="validate" id="phone" name="phone" required>
-                    <label for="icon_telephone">Telephone</label>
               </div>
             </div>
             <div class="row">
-              <div class="input-field col s12 l9">
-                  <i class="material-icons prefix">mode_edit</i>
+              <div class="input-field col s12 l12">
+                  <i class="material-icons prefix">location_on</i>
                   <textarea id="icon_prefix1" class="materialize-textarea"></textarea>
-                  <label for="icon_prefix1">Please Tell Us Where You Currently Live</label>
+                  <label for="icon_prefix1">Where do you live?</label>
+                <span class="helper-text" data-error="Please provide a valid address."
+                    data-success="Great! You're good to go."></span>
               </div>
             </div>
             <div class="row">
-                <div> Gender:
+                <div class="col s12 m12 l12"> Gender:
                     <p>
                         <label>
                             <input name="gender" type="radio" checked />
                             <span>Male</span>
                         </label>
-                    <!-- </p>
-                    <p> -->
                         <label>
                             <input name="gender" type="radio"/>
                             <span>Female</span>
                         </label>
-                    <!-- </p>
-                    <p> -->
                         <label>
                             <input name="gender" type="radio" />
                             <span>Other</span>
@@ -89,31 +87,38 @@
                 </div>
             </div>
             <div class="row">
-                <div class="input-field col s12">List your Social Media Handles
-                    <div class="input-field col s12 l9">
-                        <span class="fab fa-linkedin prefix linkedin"></span>
-                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                        <label for="icon_prefix2">linkedin url</label>
-                     </div>
-                    <div class="input-field col s12 l9">
-                        <span class="fab fa-twitter prefix twitter"></span>
-                        <textarea id="icon_prefix4" class="materialize-textarea"></textarea>
-                        <label for="icon_prefix4">twitter url</label>
+                <div class="input-field col s12">
+                    <p class="align-left">List your Social Media Handles</p>
+                    <div class="row">
+                        <div class="input-field col s12 m6 l6">
+                            <span class="fab fa-linkedin prefix linkedin"></span>
+                            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                            <label for="icon_prefix2">linkedin url</label>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <span class="fab fa-twitter prefix twitter"></span>
+                            <textarea id="icon_prefix4" class="materialize-textarea"></textarea>
+                            <label for="icon_prefix4">twitter url</label>
+                        </div>
                     </div>
-                    <div class="input-field col s12 l9">
-                        <span class="fab fa-instagram prefix instagram"></span>
-                        <textarea id="icon_prefix5" class="materialize-textarea"></textarea>
-                        <label for="icon_prefix5">Instagram url</label>
+                    <div class="row">
+                        <div class="input-field col s12 m6 l6">
+                            <span class="fab fa-instagram prefix instagram"></span>
+                            <textarea id="icon_prefix5" class="materialize-textarea"></textarea>
+                            <label for="icon_prefix5">Instagram url</label>
+                        </div>
+                        <div class="input-field col s12 m6 l6">
+                            <span class="fab fa-facebook prefix facebook"></span>
+                            <textarea id="icon_prefix6" class="materialize-textarea"></textarea>
+                            <label for="icon_prefix6">Facebook url</label>
+                        </div>
                     </div>
-                    <div class="input-field col s12 l9">
-                        <span class="fab fa-facebook prefix facebook"></span>
-                        <textarea id="icon_prefix6" class="materialize-textarea"></textarea>
-                        <label for="icon_prefix6">Facebook url</label>
-                    </div>
-                    <div class="input-field col s12 l9">
-                        <span class="fab fa-skype prefix skype"></span>
-                        <textarea id="icon_prefix7" class="materialize-textarea"></textarea>
-                        <label for="icon_prefix7">Skype url</label>
+                    <div class="row">
+                        <div class="input-field col s12 m6 l6">
+                            <span class="fab fa-skype prefix skype"></span>
+                            <textarea id="icon_prefix7" class="materialize-textarea"></textarea>
+                            <label for="icon_prefix7">Skype url</label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -168,21 +173,28 @@
               </div>
             </div>
             <div class="row">
-              <div class="input-field col s12 l9">
+              <div class="input-field col s12 m12 l12">
                 <i class="material-icons prefix">mode_edit</i>
                 <textarea id="icon_prefix3" class="materialize-textarea"></textarea>
-                <label for="icon_prefix3">Why Do You Want To Volunteer?</label>
+                <label for="icon_prefix3">Why do you want to volunteer?</label>
               </div>
             </div>
             <div class="row center-align">
-                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <button class="btn waves-effect waves-light top-margin bottom-margin" type="submit" name="action">Submit
                     <i class="material-icons right">send</i>
                 </button>
             </div>
-            <!-- <span style="font-size: 3em; color: Tomato;">
-                <i class="fas fa-linkedin"></i>
-            </span> -->
         </form>
+        <div class="row center-align">
+            <div class="col s12 bottom-margin">
+                <p class="text-center">
+                    &copy; <span id="year"></span> Hope Behind Bars Africa</p>
+                <small class="form-text text-muted text-center animated swing infinite slower bottom-margin">Designed and
+                    Developed by
+                    <a href="https://stbensonimoh.com/about" target="_blank">Benson Imoh,ST</a> and <a href="#" target="_blank">Etinyene Uko</a>
+                </small>
+            </div>
+        </div>
     </div>
 
     <!--import materialize js-->
