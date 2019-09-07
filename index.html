@@ -152,7 +152,7 @@
             </div>
             <div class="row">
               <div class="input-field col s12">What Unit Would You Like To Volunteer?
-                  <select name="volunteerUnit" multiple>
+                  <select name="volunteerUnit" multiple required>
                       <option value="Research">Research</option>
                       <option value="Writing Legal Articles">Writing Legal Articles</option>
                       <option value="Media Content Writing">Media Content Writing</option>
@@ -162,13 +162,15 @@
                       <option value="Photography">Photography</option>
                       <option value="Videography">Videography</option>
                   </select>
+                <span class="helper-text" data-error="Please pick a volunteer unit."
+                    data-success="Great! You're good to go."></span>
               </div>
             </div>
             <div class="row">
               <div class="input-field col s12 m12 l12">
                 <i class="material-icons prefix">mode_edit</i>
                  <textarea id="textarea2" class="materialize-textarea" name="reasonForVolunteering"
-                  minlength="160" data-length=""></textarea>
+                  minlength="160" data-length="" required></textarea>
                 <label for="textarea2">Why do you want to volunteer?</label>
                 <span class="helper-text" data-error="Your input should be at least 160 characters."
                     data-success="Great! You're good to go."></span>
