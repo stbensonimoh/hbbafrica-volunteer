@@ -29,9 +29,9 @@ div.input-field {
   width: 60%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .container {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -41,11 +41,12 @@ div.input-field {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 600px) {
   .container {
-    width: 80%;
+    width: 94%;
   }
 }
+
 
 .logo-bg {
   background: #0a9ca1;
