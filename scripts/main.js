@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault()
 
       // change the button color and add the loading class
-      document.querySelector('button').classList.remove('btn-danger')
+    //   document.querySelector('button').classList.remove('btn-danger')
       document.querySelector('button').classList.add('btn-primary')
       document.querySelector('button').innerHTML =
         'Loading <span class="spinner"><i class="fa fa-spinner fa-spin"></i></span>'
