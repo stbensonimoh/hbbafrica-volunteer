@@ -64,7 +64,7 @@
             <div class="row">
               <div class="input-field col s12 l12">
                   <i class="material-icons prefix">location_on</i>
-                  <textarea id="icon_prefix1" class="materialize-textarea" name="location"></textarea>
+                  <input type="text" id="icon_prefix1" name="location" required>
                   <label for="icon_prefix1">Where do you live?</label>
                 <span class="helper-text" data-error="Please provide a valid address."
                     data-success="Great! You're good to go."></span>
@@ -74,7 +74,7 @@
                 <div class="col s12 m12 l12"> Gender:
                     <p>
                         <label>
-                            <input name="gender" type="radio" value="Male" checked />
+                            <input name="gender" type="radio" value="Male" required/>
                             <span>Male</span>
                         </label>
                         <label>
@@ -90,7 +90,7 @@
             </div>
             <div class="row">
                 <div class="input-field col s12">
-                    <p class="align-left">List your Social Media Handles</p>
+                    <p class="align-left">List your social media handles</p>
                     <div class="row">
                         <div class="input-field col s12 m6 l6">
                             <span class="fab fa-linkedin prefix linkedin"></span>
@@ -125,10 +125,10 @@
                 </div>
             </div>
             <div class="row">
-                <div>Which Social Media Handle Are You Most Conversant With?
+                <div>Which social media network are you most familiar with?
                 <p>
                     <label>
-                        <input name="preferredSocialMedia" value="linkedin" type="radio" checked />
+                        <input name="preferredSocialMedia" value="linkedin" type="radio" required />
                         <span>LinkedIn</span>
                     </label>
                     <label>
@@ -151,7 +151,7 @@
                 </div>
             </div>
             <div class="row">
-              <div class="input-field col s12">What Unit Would You Like To Volunteer?
+              <div class="input-field col s12">What unit would you like to volunteer?
                   <select name="volunteerUnit" multiple required>
                       <option value="Research">Research</option>
                       <option value="Writing Legal Articles">Writing Legal Articles</option>
