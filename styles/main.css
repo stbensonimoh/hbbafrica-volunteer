@@ -56,6 +56,16 @@ div.input-field {
   border-radius: 15px 15px 0px 0px;
 }
 
+.font {
+    color: whitesmoke;
+    font-size: 2em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+
+}
+
 #logo {
   width: 10rem;
 }
