@@ -257,8 +257,7 @@
         </div>
     </div>
     <!-- google places api call -->
-    <!-- <script type="text/javascript"
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAtHHrt3-wniazc8Rjt1SL90v91UMnfE4&amp;libraries=places"></script> -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAtHHrt3-wniazc8Rjt1SL90v91UMnfE4&amp;libraries=places"></script>
     <!--import materialize js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- load font awesome js -->
@@ -266,21 +265,4 @@
     <!-- main js -->
     <script src="scripts/main.js"></script>
 </body>
-<!-- <script type="text/javascript"
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAtHHrt3-wniazc8Rjt1SL90v91UMnfE4&libraries=places"></script>
-
-<script>
-    google.maps.event.addDomListener(window, 'load', initialize);
-    function initialize() {
-        var input = document.getElementById('location');
-        var autocomplete = new google.maps.places.Autocomplete(input);
-        autocomplete.addListener('place_changed', function () {
-            var place = autocomplete.getPlace();
-            // place variable will have all the information you are looking for.
-            $('#lat').val(place.geometry['location'].lat());
-            $('#long').val(place.geometry['location'].lng());
-        });
-    }
-</script> -->
-
 </html>
