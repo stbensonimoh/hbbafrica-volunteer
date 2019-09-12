@@ -48,3 +48,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 })
+
+
+
+//Capitalize first letter of First Name and Last Name
+const firstName = document.querySelector('#icon_prefix');
+const lastName = document.querySelector('#last_name');
+
+const capitalizeFirstLetter = (e) => {
+  e.target.value = e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1);
+};
+
+firstName.addEventListener('keyup', capitalizeFirstLetter);
+lastName.addEventListener('keyup', capitalizeFirstLetter);
+
+
+//Enable email to be in lowercase
+const email = document.querySelector('#email');
+email.addEventListener('keyup', (e) => {
+  e.target.value = e.target.value.toLowerCase();
+})
