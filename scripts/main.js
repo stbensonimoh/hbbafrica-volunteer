@@ -11,6 +11,28 @@ document.addEventListener('DOMContentLoaded', () => {
   const yearContent = document.querySelector('#year')
   yearContent.innerHTML = year
 
+  // Capitalize first letter of First Name and Last Name
+  document.querySelector('#firstName').onchange = e => {
+    let val = document.querySelector('#firstName').value
+    RegExp = /\b[a-z]/g
+
+    val = val.charAt(0).toUpperCase() + val.substr(1)
+  }
+
+  document.querySelector('#lastName').onchange = e => {
+    let val = document.querySelector('#lastName').value
+    RegExp = /\b[a-z]/g
+
+    val = val.charAt(0).toUpperCase() + val.substr(1)
+  }
+
+  document.querySelector('#email').onchange = e => {
+    let val = document.querySelector('#email').value
+    RegExp = /\b[a-z]/g
+
+    val = val.toLowerCase()
+  }
+
   // Add intl-tel-input
   window.intlTelInputGlobals.loadUtils('scripts/utils.js')
   var input = document.querySelector('#phone')
@@ -47,24 +69,4 @@ document.addEventListener('DOMContentLoaded', () => {
         'Loading <span class="spinner"><i class="fa fa-spinner fa-spin"></i></span>'
     }
   })
-})
-
-
-
-//Capitalize first letter of First Name and Last Name
-const firstName = document.querySelector('#icon_prefix');
-const lastName = document.querySelector('#last_name');
-
-const capitalizeFirstLetter = (e) => {
-  e.target.value = e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1);
-};
-
-firstName.addEventListener('keyup', capitalizeFirstLetter);
-lastName.addEventListener('keyup', capitalizeFirstLetter);
-
-
-//Enable email to be in lowercase
-const email = document.querySelector('#email');
-email.addEventListener('keyup', (e) => {
-  e.target.value = e.target.value.toLowerCase();
 })
