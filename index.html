@@ -38,8 +38,7 @@
             <div class="row">
                 <div class="input-field col s12 l6">
                     <i class="material-icons prefix">account_circle</i>
-                    <input id="icon_prefix" type="text" class="validate" style="text-transform: uppercase"
-                     name="firstName" required>
+                    <input id="icon_prefix" type="text" class="validate" name="firstName" required>
                     <label for="icon_prefix">Your First Name</label>
                     <span class="helper-text" data-error="Oops! Please provide a name."
                      data-success="Yeah! Looks good."></span>
@@ -49,8 +48,7 @@
                  $_POST['fieldname'] = strtoupper($_POST['fieldname']);
                 ?> -->
                 <div class="input-field col s12 l6">
-                    <input id="last_name" type="text" class="validate" style="text-transform: uppercase"
-                     name="lastName" required>
+                    <input id="last_name" type="text" class="validate" name="lastName" required>
                     <label for="last_name">Your Last Name</label>
                     <span class="helper-text" data-error="Ooops! Please provide a name."
                     data-success="Yeah! Looks good."></span>
@@ -59,8 +57,7 @@
             <div class="row">
               <div class="input-field col s12 l6">
                     <i class="material-icons prefix">email</i>
-                    <input id="email" type="email" class="validate" style="text-transform: lowercase"
-                     name="email" required>
+                    <input id="email" type="email" class="validate" name="email" required>
                     <label for="email">Your Email</label>
                     <span class="helper-text" data-error="Please provide a valid email address."
                      data-success="Great! You're good to go."></span>
@@ -75,8 +72,8 @@
             <div class="row">
               <div class="input-field col s12 l12">
                   <i class="material-icons prefix">location_on</i>
-                  <input type="text" id="icon_prefix1" name="location" required>
-                  <label for="icon_prefix1">Where do you live?</label>
+                  <input type="text" id="location" name="location" required>
+                  <label for="location">Where do you live?</label>
                 <span class="helper-text" data-error="Please provide a valid address."
                     data-success="Great! You're good to go."></span>
               </div>
@@ -187,6 +184,57 @@
                     data-success="Great! You're good to go."></span>
               </div>
             </div>
+            <div class="row">
+                <div class="input-field col s12 m12 l12">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="textarea3" class="materialize-textarea" name="volunteerExperience"
+                     maxlength="50" data-length="" required></textarea>
+                    <label for="textarea3">Tell us about your previous volunteer experience</label>
+                    <span class="helper-text" data-error="Your input should be at most 50 characters."
+                        data-success="Great! You're good to go."></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">How long do you want to volunteer with us?
+                    <select name="volunteerPeriod" required>
+                        <option value="Three months">Three months</option>
+                        <option value="Six months">Six months</option>
+                        <option value="One year">One year</option>
+                        <option value="Just for specific programs or outreaches">Just for specific programs or outreaches</option>
+                        <option value="As long as possible">As long as possible</option>
+                    </select>
+                    <span class="helper-text" data-error="Please pick a volunteer period."
+                        data-success="Great! You're good to go."></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m12 l12">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="textarea4" class="materialize-textarea" name="fiveYearsProjection" maxlength="50" data-length=""
+                        required></textarea>
+                    <label for="textarea4">Where do you see yourself in five(5) years?</label>
+                    <span class="helper-text" data-error="Your input should be at most 50 words."
+                        data-success="Great! You're good to go."></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m12 l12">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="textarea5" class="materialize-textarea" name="fiveYearsProjectionHelp" maxlength="50" data-length=""
+                        required></textarea>
+                    <label for="textarea5">How do you think volunteering with us can help you achieve that?</label>
+                    <span class="helper-text" data-error="Your input should be at most 50 words."
+                        data-success="Great! You're good to go."></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12 m12 l12">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="textarea6" class="materialize-textarea" name="areaOfInterest" maxlength="50"
+                        data-length="" required></textarea>
+                    <label for="textarea6">List three of your interest or area of study</label>
+                </div>
+            </div>
             <div class="row center-align">
                 <button class="btn btn-large waves-effect waves-light top-margin bottom-margin" type="submit" name="action">Submit
                     <i class="material-icons right">send</i>
@@ -205,7 +253,8 @@
             </div>
         </div>
     </div>
-
+    <!-- google places api call -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAtHHrt3-wniazc8Rjt1SL90v91UMnfE4&amp;libraries=places"></script>
     <!--import materialize js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- load font awesome js -->
@@ -213,5 +262,4 @@
     <!-- main js -->
     <script src="scripts/main.js"></script>
 </body>
-
 </html>
