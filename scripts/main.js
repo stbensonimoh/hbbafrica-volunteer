@@ -68,6 +68,20 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('button').classList.add('btn-primary')
       document.querySelector('button').innerHTML =
         'Loading <span class="spinner"><i class="fa fa-spinner fa-spin"></i></span>'
+
+      // Grab the form data
+      const formdata = new FormData(form)
+
+      // send it for processing
+      fetch('scripts/processor.php', {
+        method: 'post',
+        body: formdata
+      })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(err => {
+          console.log('The request failed', err)
+        })
     }
   })
 })
