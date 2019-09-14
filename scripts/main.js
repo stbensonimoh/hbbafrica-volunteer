@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const elems = document.querySelectorAll('select')
   const instances = M.FormSelect.init(elems)
-  const count = document.querySelector('textarea#textarea2')
+  const count = document.querySelectorAll('textarea')
   M.CharacterCounter.init(count)
 
   //   Submit the form
