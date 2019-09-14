@@ -31,25 +31,31 @@
                 <img src="./images/hbb_logo.jpg" alt="HBBAfrica Logo" id="logo">
             </p>
             <p class="font Fjalla One">
-                VOLUNTEER FORM
+                VOLUNTEER APPLICATION
             </p>
         </div>
         <form class="padding-bottom padding-top" id="form">
             <div class="row">
                 <div class="input-field col s12 l6">
                     <i class="material-icons prefix">account_circle</i>
+<<<<<<< HEAD
                     <input id="icon_prefix" type="text" class="validate" name="firstName" required>
                     <label for="icon_prefix">Your First Name</label>
+=======
+                    <input id="firstName" type="text" class="validate initialCaps" name="firstName" required>
+                    <label for="firstName">Your First Name</label>
+>>>>>>> development
                     <span class="helper-text" data-error="Oops! Please provide a name."
                      data-success="Yeah! Looks good."></span>
                 </div>
-                <!-- text transform for back end php code
-                <?PHP
-                 $_POST['fieldname'] = strtoupper($_POST['fieldname']);
-                ?> -->
                 <div class="input-field col s12 l6">
+<<<<<<< HEAD
                     <input id="last_name" type="text" class="validate" name="lastName" required>
                     <label for="last_name">Your Last Name</label>
+=======
+                    <input id="lastName" type="text" class="validate initialCaps" name="lastName" required>
+                    <label for="lastName">Your Last Name</label>
+>>>>>>> development
                     <span class="helper-text" data-error="Ooops! Please provide a name."
                     data-success="Yeah! Looks good."></span>
                 </div>
@@ -57,7 +63,11 @@
             <div class="row">
               <div class="input-field col s12 l6">
                     <i class="material-icons prefix">email</i>
+<<<<<<< HEAD
                     <input id="email" type="email" class="validate" name="email" required>
+=======
+                    <input id="email" type="email" class="validate lowerCase" name="email" required>
+>>>>>>> development
                     <label for="email">Your Email</label>
                     <span class="helper-text" data-error="Please provide a valid email address."
                      data-success="Great! You're good to go."></span>
@@ -177,7 +187,7 @@
             <div class="row">
               <div class="input-field col s12 m12 l12">
                 <i class="material-icons prefix">mode_edit</i>
-                 <textarea id="textarea2" class="materialize-textarea" name="reasonForVolunteering"
+                 <textarea id="textarea2" class="materialize-textarea initialCaps" name="reasonForVolunteering"
                   minlength="160" data-length="" required></textarea>
                 <label for="textarea2">Why do you want to volunteer?</label>
                 <span class="helper-text" data-error="Your input should be at least 160 characters."

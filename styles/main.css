@@ -66,6 +66,13 @@ div.input-field {
 
 }
 
+.initialCaps {
+  text-transform: capitalize!important;
+}
+
+.lowerCase {
+  text-transform: lowercase!important;
+}
 #logo {
   width: 10rem;
 }
