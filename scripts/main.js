@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     hiddenInput: 'full_phone',
     utilsScript: 'scripts/utils.js'
   })
+
   const elems = document.querySelectorAll('select')
   const instances = M.FormSelect.init(elems)
   const count = document.querySelector('textarea#textarea2')
