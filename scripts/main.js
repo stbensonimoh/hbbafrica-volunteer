@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const formdata = new FormData(form)
 
       // send it for processing
-      fetch('scripts/processor.php', {
+      fetch('http://localhost:3000/volunteer/create', {
         method: 'post',
         body: formdata
       })
