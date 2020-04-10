@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches-ignore:
+      - production
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
+  FTP-Deploy-Action:
+
+    name: FTP-Deploy-Action
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@2.0.0
+      env:
+        FTP_SERVER: ftp.hopebehindbarsafrica.org
+        FTP_USERNAME: hopebehi
+        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        LOCAL_DIR: .
+        REMOTE_DIR: public_html/volunteer
+#         ARGS: --delete
+        # --delete arg will delete files on the server if you've deleted them in git
