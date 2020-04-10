@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       // send it for processing
-      fetch('http://localhost:3000/volunteer/create', {
+      fetch('https://hbbafrica-api.herokuapp.com/volunteer/create', {
         method: 'post',
         headers: {
           'Content-Type': 'application/json'

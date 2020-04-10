@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
   // initiate a fetch call
   axios
-    .get('http://localhost:3000/volunteer/findall')
+    .get('https://hbbafrica-api.herokuapp.com/volunteer/findall')
     .then(response => {
       console.log(response.data.result)
       const results = response.data.result
