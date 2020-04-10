@@ -44,7 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   const elems = document.querySelectorAll('select')
+  const elem = document.querySelector('select')
   const instances = M.FormSelect.init(elems)
+  const instance = M.FormSelect.getInstance(elem)
   const count = document.querySelectorAll('textarea')
   M.CharacterCounter.init(count)
 
@@ -69,16 +71,81 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelector('button').innerHTML =
         'Loading <span class="spinner"><i class="fa fa-spinner fa-spin"></i></span>'
 
-      // Grab the form data
-      const formdata = new FormData(form)
+      // Create Form Variables
+      const firstName = document.querySelector("input[name='firstName'").value
+      const lastName = document.querySelector("input[name='lastName'").value
+      const email = document.querySelector("input[name='email'").value
+      const phone = document.querySelector("input[name='full_phone'").value
+      const location = document.querySelector("input[name='location'").value
+      const gender = document.querySelector("input[name='gender'").value
+      const linkedin = document.querySelector("input[name='linkedin'").value
+      const twitter = document.querySelector("input[name='twitter'").value
+      const instagram = document.querySelector("input[name='instagram'").value
+      const facebook = document.querySelector("input[name='facebook'").value
+      const skype = document.querySelector("input[name='skype'").value
+      const preferredSocialMedia = document.querySelector(
+        "input[name='preferredSocialMedia'"
+      ).value
+      const volunteerUnit = document.querySelector(
+        "select[name='volunteerUnit'"
+      ).value
+      const reasonForVolunteering = document.querySelector(
+        "textarea[name='reasonForVolunteering'"
+      ).value
+
+      // construct formData
+      const formBody = {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        phone: phone,
+        location: location,
+        gender: gender,
+        socialMediaHandles: {
+          linkedin: linkedin,
+          twitter: twitter,
+          instagram: instagram,
+          facebook: facebook,
+          skype: skype
+        },
+        preferredSocialMedia: preferredSocialMedia,
+        volunteerUnit: instance.getSelectedValues(),
+        reasonForVolunteering: reasonForVolunteering
+      }
 
       // send it for processing
-      fetch('http://localhost:3000/volunteer/create', {
+      fetch('https://hbbafrica-api.herokuapp.com/volunteer/create', {
         method: 'post',
-        body: formdata
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formBody)
       })
         .then(response => response.json())
-        .then(data => console.log(data))
+        .then(data => {
+          console.log(data)
+          if (data.message === 'Volunteer created Successfully') {
+            swal(
+              'Application Successful!',
+              'Your volunteer Application was successful!',
+              'success'
+            )
+            setTimeout(
+              (window.location = 'https://hopebehindbarsafrica.org'),
+              3000
+            )
+          } else {
+            swal(
+              'Already Registered!',
+              'You have already registered!',
+              'warning'
+            )
+            setTimeout(
+              (window.location = 'https://hopebehindbarsafrica.org'),
+              3000
+            )
+          }
+        })
         .catch(err => {
           console.log('The request failed', err)
         })
